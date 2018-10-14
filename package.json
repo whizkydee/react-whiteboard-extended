@@ -10,9 +10,9 @@
   "author": "Mikhail Angelov",
   "license": "MIT",
   "dependencies": {
-    "immutable": "^3.8.1",
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "immutable": "^3.8.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
