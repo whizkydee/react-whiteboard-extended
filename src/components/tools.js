@@ -9,10 +9,10 @@ export default class Tools extends React.Component {
     this.state = {
       tools: [
         { id: POINTER, label: 'fa-mouse-pointer', type: 'cursor' },
-        { id: LINE, label: 'fa-minus', type: 'line', selected: true },
+        { id: LINE, label: 'fa-minus', type: 'line' },
         { id: RECT, label: 'fa-square-o', type: 'rect' },
         { id: ELLIPSE, label: 'fa-circle-thin', type: 'ellipse' },
-        { id: PEN, label: 'fa-pencil', type: 'pen' }
+        { id: PEN, label: 'fa-pencil', type: 'pen', selected: true }
       ]
     };
     ToolStore.subscribe(() => {
