@@ -1,4 +1,4 @@
-import { ELLIPSE, PEN } from './toolStore';
+import { CIRCLE, PEN } from './toolStore';
 
 export function pointInsideRect(point, rect) {
   return (
@@ -11,7 +11,7 @@ export function pointInsideRect(point, rect) {
 
 export function getShapeRect(shape) {
   const end = shape.path.length - 1;
-  if (shape.type === ELLIPSE) {
+  if (shape.type === CIRCLE) {
     const halfWidth = Math.abs(shape.path[0].x - shape.path[end].x);
     const halfHeight = Math.abs(shape.path[0].y - shape.path[end].y);
     return {

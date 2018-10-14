@@ -3,7 +3,7 @@ import EventBus from './eventBus';
 export const POINTER = 'Pointer';
 export const PEN = 'Pen';
 export const LINE = 'Line';
-export const ELLIPSE = 'Elipse';
+export const CIRCLE = 'Elipse';
 export const RECT = 'Rect';
 
 class ToolStore {
