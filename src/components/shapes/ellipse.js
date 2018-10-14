@@ -5,8 +5,8 @@ export default class Ellipse extends React.Component {
     let ellipse = {
       cx: this.props.path[0].x,
       cy: this.props.path[0].y,
-      rx: this.props.path[this.props.path.length - 1].x - this.props.path[0].x,
-      ry: this.props.path[this.props.path.length - 1].y - this.props.path[0].y
+      rx: Math.abs(this.props.path[this.props.path.length - 1].x - this.props.path[0].x),
+      ry: Math.abs(this.props.path[this.props.path.length - 1].y - this.props.path[0].y)
     };
     return ellipse;
   }
