@@ -17,7 +17,7 @@ class EventBus {
 
   on(event, cb) {
     let callbacks = this.listeners[event] || [];
-    if (callbacks.indexOf(cb) == -1) callbacks.push(cb);
+    if (callbacks.indexOf(cb) === -1) callbacks.push(cb);
     this.listeners[event] = callbacks;
   }
 
