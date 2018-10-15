@@ -65,6 +65,11 @@ export default class WhiteBoard extends React.Component {
     EventBus.emit(EventBus.END_PATH, this.mousePos(e));
   }
 
+  preventContextMenu = event => {
+    event.preventDefault();
+    return false;
+  }
+
   keyDown(e) {
     switch (e.keyCode) {
       case 27: // escape
@@ -109,6 +114,7 @@ export default class WhiteBoard extends React.Component {
         width={this.props.width}
         height={this.props.height}
         ref={canvas => (this._svg = canvas)}
+        onContextMenu={this.preventContextMenu}
       >
         {shapes}
         {current}
