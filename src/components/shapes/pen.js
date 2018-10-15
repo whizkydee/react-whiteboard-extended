@@ -15,12 +15,6 @@ export default class Pen extends React.Component {
 
   render() {
     let d = this.prepareData();
-    return (
-      <path d={d}
-        fill="none"
-        strokeWidth={1}
-        stroke={this.props.color}
-      />
-    );
+    return <path d={d} fill="none" strokeWidth={3} stroke={this.props.color} />;
   }
 }

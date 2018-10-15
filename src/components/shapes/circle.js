@@ -20,7 +20,7 @@ export default class Circle extends React.Component {
         r={circle.r}
         cx={circle.cx}
         cy={circle.cy}
-        strokeWidth={1}
+        strokeWidth={3}
         stroke={this.props.color}
       />
     );
