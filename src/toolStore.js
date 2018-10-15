@@ -11,7 +11,7 @@ class ToolStore {
     this.id = 'toolStore';
     EventBus.on(EventBus.TOOL_CHANGE, this.toolChange.bind(this));
     EventBus.on(EventBus.COLOR_CHANGE, this.colorChange.bind(this));
-    this.tool = LINE;
+    this.tool = PEN;
     this.color = 'black';
   }
   subscribe(cb) {

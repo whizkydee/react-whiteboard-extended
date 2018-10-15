@@ -36,7 +36,7 @@ class Store {
     };
     this.history = [this.data.shapes];
     this.historyIndex = -1;
-    this.tool = Line;
+    this.tool = Pen;
     this.color = 'black';
 
     ToolStore.subscribe(() => {
