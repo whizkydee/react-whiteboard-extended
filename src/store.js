@@ -109,6 +109,14 @@ class Store {
       this.pickVersion(null, this.historyIndex - 1);
     }
   }
+
+  redo() {
+    if (this.history.length > 0) {
+      if (this.historyIndex < 1) this.historyIndex = this.history.length + 1;
+      this.pickVersion(null, this.historyIndex + 1);
+    }
+  }
+
   _catHistory() {
     if (this.historyIndex >= 0) {
       this.history.splice(
@@ -118,7 +126,7 @@ class Store {
     }
   }
   pickVersion(event, index) {
-    console.log(index);
+    // console.log(index);
     if (this.history && this.history[index]) {
       this.historyIndex = index;
       let shapes = this.history[index];
@@ -140,12 +148,6 @@ class Store {
         return s;
       }
     });
-  }
-  redo() {
-    if (this.history.length > 0) {
-      if (this.historyIndex === 1) this.historyIndex = this.history.length + 1;
-      this.pickVersion(null, this.historyIndex + 1);
-    }
   }
 }
 
