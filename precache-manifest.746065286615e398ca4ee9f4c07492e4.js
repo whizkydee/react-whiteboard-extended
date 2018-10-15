@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/react-whiteboard-extended/static/js/runtime~main.3b30c3ef.js"
   },
   {
-    "revision": "54507d2da66addce1a2d",
-    "url": "/react-whiteboard-extended/static/js/main.54507d2d.chunk.js"
+    "revision": "4d995d212565620402b8",
+    "url": "/react-whiteboard-extended/static/js/main.4d995d21.chunk.js"
   },
   {
     "revision": "c77c3cad6a2af8fdb477",
     "url": "/react-whiteboard-extended/static/js/1.c77c3cad.chunk.js"
   },
   {
-    "revision": "584852c64456473207b8d39fe1961dab",
+    "revision": "e69b720d668de9f1d8518660ee903c06",
     "url": "/react-whiteboard-extended/index.html"
   }
 ];
