@@ -1,10 +1,11 @@
 import Immutable from 'immutable';
 import EventBus from './eventBus';
-import ToolStore, { POINTER, PEN, LINE, CIRCLE, RECT } from './toolStore';
+import ToolStore, { POINTER, PEN, LINE, CIRCLE, RECT, ERASER } from './toolStore';
 import Line from './components/shapes/line';
 import Pen from './components/shapes/pen';
 import Rect from './components/shapes/rect';
 import Circle from './components/shapes/circle';
+import Eraser from './components/eraser';
 import { pointInsideRect, getShapeRect } from './utils';
 
 export const SELECT = 'Select';
@@ -17,6 +18,7 @@ mapTools[LINE] = Line;
 mapTools[RECT] = Rect;
 mapTools[CIRCLE] = Circle;
 mapTools[PEN] = Pen;
+mapTools[ERASER] = Eraser;
 
 class Store {
   constructor() {

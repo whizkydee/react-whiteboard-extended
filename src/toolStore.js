@@ -5,6 +5,7 @@ export const PEN = 'Pen';
 export const LINE = 'Line';
 export const CIRCLE = 'Elipse';
 export const RECT = 'Rect';
+export const ERASER = 'Eraser';
 
 class ToolStore {
   constructor() {

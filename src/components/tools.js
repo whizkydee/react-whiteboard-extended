@@ -1,6 +1,6 @@
 import React from 'react';
 import EventBus from '../eventBus';
-import ToolStore, { POINTER, PEN, LINE, CIRCLE, RECT } from '../toolStore';
+import ToolStore, { POINTER, PEN, LINE, CIRCLE, RECT, ERASER } from '../toolStore';
 import ColorPicker from './colorPicker';
 
 export default class Tools extends React.Component {
@@ -12,7 +12,8 @@ export default class Tools extends React.Component {
         { id: LINE, label: 'fa-minus', type: 'line' },
         { id: RECT, label: 'fa-square-o', type: 'rect' },
         { id: CIRCLE, label: 'fa-circle-thin', type: 'circle' },
-        { id: PEN, label: 'fa-pencil', type: 'pen', selected: true }
+        { id: PEN, label: 'fa-pencil', type: 'pen', selected: true },
+        { id: ERASER, label: 'fa-eraser', type: 'eraser' }
       ]
     };
     ToolStore.subscribe(() => {
