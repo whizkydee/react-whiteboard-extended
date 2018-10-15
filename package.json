@@ -1,15 +1,20 @@
+
 {
   "name": "react-whiteboard-extended",
   "version": "1.1.0",
   "license": "MIT",
+  "homepage": "https://olaolu.me/react-whiteboard-extended",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "immutable": "^3.8.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
