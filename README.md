@@ -1,35 +1,14 @@
-# This is whiteboard application
-## [live version](http://mikhail-angelov.github.io/react-whiteboard/)
-The purpose of this application was to practise with [react](https://facebook.github.io/react/) and [imutable.js](https://facebook.github.io/immutable-js/), the code was inspired by [this presentation (Russian)](https://youtu.be/lDkrXTDwbJQ)
+# react-whiteboard-extended
 
-If you like to play with application, there is brief instructions:
+This is an extension and improvement of [react-whiteboard](https://github.com/mikhail-angelov/react-whiteboard) by Mikhail Angelov. [I'm](https://github.com/whizkydee) working on it to match our needs on the [Conectar Classroom](https://github.com/mayordwells/conectar-classroom).
 
-clone it
-```
-git clone https://github.com/mikhail-angelov/react-whiteboard.git
-```
-make sure you have nodejs and those packages (babel webpack webpack-dev-server) globally installed, if not, install fresh [node.js](https://nodejs.org), then
-```
-npm i babel webpack webpack-dev-server -g
-```
-to start application in development mode run
-```
-npm start
-```
-to build bundle for deploy run
-```
-webpack
-```
-**application structure**
-* index.html - web page
-* main.js - app entry point
-* components/whiteBoard.js - main component
-* store.js - main store
+To run locally, follow the steps below...
 
-_it uses: React, SVG (to draw and graphical primitives), Immutable.js (to track history)_
+1. Confirm that you have Git, Node.js and NPM installed, properly set up
+1. Clone this repository to your machine with `git clone https://github.com/whizkydee/react-whiteboard-extended.git`
+1. Navigate to the folder on your computer and run `yarn install`
+1. Verify that all the dependencies have been installed and then run `yarn start`(should launch a browser window heading to `http://localhost:5000`)
+1. Your subsequent changes should reflect in the browser automagically
+1. Voila! You're all set up.
 
-License
-----
-
-MIT
-
+Copyright (c) 2016 Mikhail Angelov, 2018 Olaolu Olawuyi. Licensed under the MIT.
