@@ -11,4 +11,6 @@ To run locally, follow the steps below...
 1. Your subsequent changes should reflect in the browser automagically
 1. Voila! You're all set up.
 
+Live testing URL: [https://olaolu.me/react-whiteboard-extended/](https://olaolu.me/react-whiteboard-extended/)
+
 Copyright (c) 2016 Mikhail Angelov, 2018 Olaolu Olawuyi. Licensed under the MIT.
