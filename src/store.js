@@ -112,7 +112,6 @@ class Store {
 
   redo() {
     if (this.history.length > 0) {
-      if (this.historyIndex < 1) this.historyIndex = this.history.length + 1;
       this.pickVersion(null, this.historyIndex + 1);
     }
   }
