@@ -67,8 +67,11 @@ export default class WhiteBoard extends React.Component {
 
   keyDown(e) {
     switch (e.keyCode) {
-      case 27: //escape
+      case 27: // escape
         EventBus.emit(EventBus.UNDO);
+        break;
+      case 82: // KeyR
+        EventBus.emit(EventBus.REDO);
         break;
         default: // do nothing.
     }
