@@ -68,7 +68,7 @@ export default class WhiteBoard extends React.Component {
   preventContextMenu = event => {
     event.preventDefault();
     return false;
-  }
+  };
 
   keyDown(e) {
     switch (e.keyCode) {
@@ -78,7 +78,7 @@ export default class WhiteBoard extends React.Component {
       case 82: // KeyR
         EventBus.emit(EventBus.REDO);
         break;
-        default: // do nothing.
+      default: // do nothing.
     }
   }
   onMove(shape) {

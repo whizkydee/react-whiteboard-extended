@@ -1,4 +1,4 @@
-import { CIRCLE, PEN } from './toolStore';
+import { CIRCLE, PEN, ERASER } from './toolStore';
 
 export function pointInsideRect(point, rect) {
   return (
@@ -31,7 +31,8 @@ export function getShapeRect(shape) {
       width: maxX - minX,
       height: maxY - minY
     };
-  } else {
+  } else if (shape.type === ERASER) return { /* new empty object */ };
+  else {
     return {
       x: Math.min(shape.path[0].x, shape.path[end].x),
       y: Math.min(shape.path[0].y, shape.path[end].y),
