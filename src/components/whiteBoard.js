@@ -1,8 +1,6 @@
 import React from 'react';
 import EventBus from '../eventBus';
 import Store from '../store';
-import Selection from './selection';
-import { getShapeRect } from '../utils';
 
 export default class WhiteBoard extends React.Component {
   constructor() {
@@ -91,13 +89,7 @@ export default class WhiteBoard extends React.Component {
 
   render() {
     const data = this.state.data;
-    let selection = null;
     const shapes = data.shapes.map((shape, i) => {
-      if (shape.selected) {
-        selection = (
-          <Selection rect={getShapeRect(shape)} move={this.onMove(shape)} />
-        );
-      }
       return <shape.class key={i} path={shape.path} color={shape.color} />;
     });
     let current = null;
@@ -120,7 +112,6 @@ export default class WhiteBoard extends React.Component {
       >
         {shapes}
         {current}
-        {selection}
       </svg>
     );
   }
