@@ -70,15 +70,17 @@ export default class WhiteBoard extends React.Component {
     return false;
   };
 
-  keyDown(e) {
-    switch (e.keyCode) {
-      case 27: // escape
-        EventBus.emit(EventBus.UNDO);
-        break;
-      case 82: // KeyR
-        EventBus.emit(EventBus.REDO);
-        break;
-      default: // do nothing.
+  keyDown(event) {
+    if (event.ctrlKey) {
+      switch (event.keyCode) {
+        case 90: // KeyZ
+          EventBus.emit(EventBus.UNDO);
+          break;
+        case 89: // KeyY
+          EventBus.emit(EventBus.REDO);
+          break;
+        default: // do nothing.
+      }
     }
   }
   onMove(shape) {
