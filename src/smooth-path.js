@@ -19,13 +19,13 @@ const controlPoint = (current, previous, next, reverse) => {
   return [x, y];
 };
 
-const toCubicBeizer = (point, i, a) => {
+const toCubicBezier = (point, i, a) => {
   const [cpsX, cpsY] = controlPoint(a[i - 1], a[i - 2], point);
   const [cpeX, cpeY] = controlPoint(point, a[i - 1], a[i + 1], true);
   return `C ${cpsX}, ${cpsY} ${cpeX}, ${cpeY} ${point[0]}, ${point[1]}`;
 };
 
-export default function smoothPath(points, callback = toCubicBeizer) {
+export default function smoothPath(points, callback = toCubicBezier) {
   // build the 'd' attribute by looping over the points
   return points.reduce(
     (acc, point, i, a) =>
